@@ -54,14 +54,14 @@ const defaultMenu = {
 ║⧐ 📈 OS Uptime : *%osuptime*
 ╚═════════════════════
 
-╭───「 *PROFILMU* 」
-├ • Nama  : %name!
-├ • Role : *%role*
-├ • Limit : *%limit*
-╰───────────── %readmore`.trimStart(),
-	header: '╭─「 %category 」',
-	body: '│ • %cmd',
-	footer: '╰────\n',
+╔═══「 *PROFILMU* 」
+║ • Nama  : %name!
+║ • Role : *%role*
+║ • Limit : *%limit*
+╚═════════════ %readmore`.trimStart(),
+	header: '╔═══「 %category 」',
+	body: '║ • %cmd',
+	footer: '╚════\n',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems }) => {
 	try {
